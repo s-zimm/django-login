@@ -9,7 +9,7 @@
 <body>
     <div class="container">
             {% if user.is_authenticated %}
-            <h2>Welcome {{ user.username }}!</h2>
+            <h2>Welcome, {{ user.username }}!</h2>
             <p>This is your splash page.</p>
             <p>This is your encrypted password:</p>
             <p>{{ user.password }}</p>
