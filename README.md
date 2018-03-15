@@ -1,5 +1,5 @@
 # Django-login
-A simple exercise using Django to simulate user authentication.
+A simple exercise using Django to simulate user authentication. It uses the built in authentication that Django provides using a Sqlite DB.
 
 # How to run
 Clone the repository on a machine or environment that has Django and Python installed. Change directories into the cloned repository and run the command:
