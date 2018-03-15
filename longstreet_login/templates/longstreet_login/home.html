@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'longstreet_login/style.css' %}">
+</head>
+<body>
+    <div class="container">
+            {% if user.is_authenticated %}
+            <h2>Welcome {{ user.username }}!</h2>
+            <p>This is your splash page.</p>
+            <p>This is your encrypted password:</p>
+            <p>{{ user.password }}</p>
+            <p><a class="link-style" href="/logout">Logout</a></p>
+            {% else %}
+            <h2>Welcome to <span class="longstreet"><span style="color:#6C5431">Long</span><span style="color:rgb(230, 78, 65)">street</span></span> Logins!</h2>
+            <div class="form-container">
+                <p><a class="link-style" href="/login">Login</a></p>
+            </div>
+            {% endif %}
+    </div>
+</body>
+</html>
